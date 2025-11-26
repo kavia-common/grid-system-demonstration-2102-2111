@@ -1,0 +1,22 @@
+.grid-gallery {
+  display: grid;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .grid-gallery {
+    /* let columns prop still control; smaller cards help fit */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-gallery {
+    grid-template-columns: 1fr !important;
+  }
+}
